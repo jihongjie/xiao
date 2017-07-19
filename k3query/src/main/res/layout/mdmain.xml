@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/dlout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg"
+        android:weightSum="1">
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/include_toolbar" />
+        <WebView
+            android:layout_width="match_parent"
+            android:id="@+id/myweb"
+            android:layerType="software"
+            android:layout_height="299sp">
+        </WebView>
+
+        <TextView
+            android:id="@+id/md_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="000"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fengkuang"
+            android:text="疯狂下单"
+            android:onClick="feng"
+            android:layout_above="@+id/stooooop"
+            android:layout_alignStart="@+id/stooooop"
+            android:layout_alignEnd="@+id/stooooop" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:onClick="stooop"
+            android:layout_height="wrap_content"
+            android:id="@+id/stooooop"
+            android:text="停止"
+            android:layout_marginEnd="54dp"
+            android:layout_alignBottom="@+id/fab_init"
+            android:layout_toStartOf="@+id/fab_init" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_f5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_cached_white_24dp"
+            app:fab_colorNormal="#14e14a"
+            app:fab_colorPressed="#ec04e4"
+            app:fab_colorRipple="#99FFFFFF"
+            app:fab_showShadow="true"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+            app:fab_size="normal"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            app:fab_progress_showBackground="false"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_init"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_cloud_download_white_24dp"
+            app:fab_colorNormal="#ff2873"
+            app:fab_colorPressed="#36ec04"
+            app:fab_colorRipple="#99FFFFFF"
+            app:fab_showShadow="true"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+            app:fab_size="normal"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            app:fab_progress_showBackground="false"
+            android:layout_marginBottom="70dp"
+            android:layout_above="@+id/fab_f5"
+            android:layout_alignStart="@+id/fab_f5" />
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view_md"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/mdheader_layout"
+        app:menu="@menu/mdmenu"
+        app:itemIconTint="#5481cf">
+
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

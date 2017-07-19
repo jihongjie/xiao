@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:minWidth="10000dp"
+    android:layout_height="match_parent">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="100px"
+    android:background="#61f1f1"
+    android:gravity="center_horizontal"
+    android:text="选择您的商品"/>
+<ListView
+    android:id="@+id/lv_1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+</ListView>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_shang"
+        android:text="添加商品 "
+       />
+
+</LinearLayout>

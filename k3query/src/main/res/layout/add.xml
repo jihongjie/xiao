@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/jd_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="京东账号/手机号/QQ号/(貌似不支持中文)"/>
+    <EditText
+        android:id="@+id/jd_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="京东密码/QQ密码"
+        />
+
+
+    <RadioGroup
+        android:id="@+id/rg_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/qqlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QQ登陆(听说抢购不用排队,请提前绑定京东账号,暂不支持登陆时的验证码)"
+            android:textColor="#0105ff"
+            />
+
+        <RadioButton
+            android:id="@+id/jdlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0101"
+            android:checked="true"
+            android:text="京东普通登录(适合无限提交订单扫货)"/>
+    </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/jd_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定"/>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/k_usern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户名"
+        android:textSize="19sp"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:id="@+id/k_logincookie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_below="@id/k_usern"
+        android:text="登陆状态"/>
+
+    <TextView
+        android:id="@+id/k_qianggou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:layout_below="@id/k_logincookie"
+        android:textColor="#000000"
+        android:text="抢购状态"/>
+
+    <!--<Button-->
+        <!--android:id="@+id/k_addcar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="加车"-->
+        <!--android:padding="5dp"-->
+        <!--android:layout_marginStart="12dp"-->
+        <!--android:layout_alignBaseline="@+id/k_logincookie"-->
+        <!--android:layout_alignBottom="@+id/k_logincookie"-->
+        <!--android:layout_toEndOf="@+id/k_logincookie" />-->
+    <!--<Button-->
+        <!--android:id="@+id/k_adddingdan"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="生单"-->
+        <!--android:padding="5dp"-->
+        <!--android:layout_marginStart="80dp"-->
+        <!--android:layout_alignBaseline="@+id/k_addcar"-->
+        <!--android:layout_alignBottom="@+id/k_addcar"-->
+        <!--android:layout_alignStart="@+id/k_addcar" />-->
+
+</RelativeLayout>

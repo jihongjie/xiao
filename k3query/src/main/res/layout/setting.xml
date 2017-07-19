@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/setting_popwindow"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/set_music"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="音乐开关"
+        android:background="#8feac4"
+        android:textSize="20sp"
+        android:layout_alignParentStart="true" />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbo2"
+        android:layout_alignBottom="@+id/set_music"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/set_time"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置提交订单间隔(毫秒)"
+        android:background="#8feac4"
+        android:textSize="20sp"
+        android:layout_below="@+id/set_music"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/et_time"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/set_time"
+        android:layout_alignBottom="@+id/set_time"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:id="@+id/set_logtime"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置日志刷新间隔(毫秒)"
+        android:background="#8feac4"
+        android:textSize="20sp"
+        android:layout_below="@+id/set_time"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:id="@+id/et_logtime"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/set_logtime"
+        android:layout_alignBottom="@+id/set_logtime"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:id="@+id/set_fanli"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置返利链接"
+        android:background="#8feac4"
+        android:textSize="20sp"
+        android:layout_below="@+id/set_logtime"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:onClick="aaaaa"
+        android:text="111111111111111111111111111111111111"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

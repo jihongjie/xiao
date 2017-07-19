@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/namei"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入名称(随便写)"/>
+<EditText
+    android:id="@+id/sku"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:inputType="number"
+    android:hint="输入商品id"/>
+    <EditText
+    android:id="@+id/vendid" android:inputType="number"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="输入店铺id"/>
+    <EditText
+    android:id="@+id/catid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="输入cat"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="确定"/>
+        <Button
+            android:id="@+id/no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="取消"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#1829e1"
+        android:text="账号模式只需要设置商品id即可,其他可以乱写"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品id获取方法:地址栏上的数字亲们"
+        android:textColor="#ff0ad2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="店铺id获取方法:电脑进商品页面,右键查看源代码,按Ctrl+F搜索venderId,后面的那串数字就是ID"
+        android:textColor="#ff0000"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cat获取方法:电脑进商品页面,右键查看源代码,按Ctrl+F搜索cat:  括号里的三个数字就是,比如cat: [670,699,700],则输入670,699,700,注意逗号是英文逗号"
+        android:textColor="#ff0000"/>
+
+
+
+</LinearLayout>

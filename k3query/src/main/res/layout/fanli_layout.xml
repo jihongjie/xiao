@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:id="@+id/rlllll"
+    android:orientation="vertical">
+    <WebView
+        android:layout_width="0dp"
+        android:id="@+id/wv_login"
+        android:layout_height="0dp">
+    </WebView>
+<ScrollView
+    android:id="@+id/sc"
+    android:layout_width="match_parent"
+    android:layout_height="233dp"
+    android:layout_toStartOf="@+id/relativeLayout">
+    <TextView
+        android:id="@+id/wv_tv"
+        android:layout_width="wrap_content"
+        android:textSize="7dp"
+        android:text=""
+        android:layout_height="233dp">
+    </TextView>
+</ScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/listtt"
+        android:layout_width="239dp"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sc">
+
+        <ListView
+            android:id="@+id/lv_zhanghuao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/wv_login"
+        android:layout_toRightOf="@id/listtt"
+        android:id="@+id/relativeLayout">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ea0000"
+                android:text="抢购成功显示区"
+                android:id="@+id/succ_ess"/>
+
+        </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_alignEnd="@+id/fab_acc_add"
+            android:id="@+id/linearLayout">
+            <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:id="@+id/verycode"
+            />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_code"
+                />
+            <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/conmmit_code"
+            android:text="提交验证码(勿多点)" />
+
+
+
+        </LinearLayout>
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_acc_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_note_add_white_24dp"
+            app:fab_colorNormal="#851791"
+            app:fab_colorPressed="#d426a3de"
+            app:fab_colorRipple="#99FFFFFF"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            app:fab_progress_showBackground="false"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_showShadow="true"
+            app:fab_size="normal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="18dp" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_acc_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_settings_white_24dp"
+            app:fab_colorNormal="#ce7aef"
+            app:fab_colorPressed="#d42af48f"
+            app:fab_colorRipple="#99FFFFFF"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            app:fab_progress_showBackground="false"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_showShadow="true"
+            app:fab_size="normal"
+            android:layout_above="@+id/fab_acc_add"
+            android:layout_alignStart="@+id/fab_acc_add" />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_acc_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_stop_white_24dp"
+            app:fab_colorNormal="#1ce233"
+            app:fab_colorPressed="#d40daeda"
+            app:fab_colorRipple="#99FFFFFF"
+            app:fab_hideAnimation="@anim/fab_scale_down"
+            app:fab_progress_showBackground="false"
+            app:fab_shadowColor="#66000000"
+            app:fab_shadowRadius="4dp"
+            app:fab_shadowXOffset="1dp"
+            app:fab_shadowYOffset="3dp"
+            app:fab_showAnimation="@anim/fab_scale_up"
+            app:fab_showShadow="true"
+            app:fab_size="normal"
+            android:layout_above="@+id/fab_acc_setting"
+            android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
